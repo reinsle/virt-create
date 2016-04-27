@@ -1,0 +1,14 @@
+Source: virt-create
+Section: net
+Priority: extra
+Maintainer: Robert Einsle <robert@einsle.de>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://github.com/reinsle/virt-create
+Vcs-Git: git://github.com/reinsle/virt-create.git
+
+Package: virt-create
+Architecture: all
+Depends: virtinst
+Description: script to easy create virtual machines using virtinst
+ script to easy create virtual machines using virtinst
