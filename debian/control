@@ -1,15 +1,14 @@
 Source: virt-create
-Section: unknown
-Priority: optional
+Section: net
+Priority: extra
 Maintainer: Robert Einsle <robert@einsle.de>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://anonscm.debian.org/collab-maint/virt-create.git
-#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/virt-create.git;a=summary
+Homepage: https://github.com/reinsle/virt-create
+Vcs-Git: git://github.com/reinsle/virt-create.git
 
 Package: virt-create
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: virtinst
+Description: script to easy create virtual machines using virtinst
+ script to easy create virtual machines using virtinst
