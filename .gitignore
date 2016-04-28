@@ -2,4 +2,9 @@ debian/files
 debian/virt-create.debhelper.log
 debian/virt-create.substvars
 debian/virt-create/
+htmlcov
+virt_create.egg-info
+.coverage
 .idea
+.python-version
+.tox
