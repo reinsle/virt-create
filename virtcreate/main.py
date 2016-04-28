@@ -2,6 +2,9 @@
 
 import argparse
 import os
+import virtcreate.config as config
+from sh import virt_install
+
 
 class VirtCreate:
     def createArgumentParser(self):
@@ -28,15 +31,23 @@ class VirtCreate:
         :param args: the programm arguments
         :return: the command to run
         '''
+        #virt_install.bake('--{}'.format(argname), '')
+        for key, value in config.config['virt_machine'].iteritems():
+            print(key, value)
+
+
+        print(virt_install)
+
+
         cmd = '''/usr/bin/virt-install \
                 --connect=qemu:///system \
-                -n {0} \
-                -r {3} \
+                --name={0} \
+                --ram={3} \
                 --vcpus={2} \
                 --os-type=linux \
                 --os-variant=debianwheezy \
                 --disk /dev/vg_data/lv_{0},bus=virtio,size={1} \
-                -w network=10-server,model=virtio \
+                --network='network=10-server,model=virtio' \
                 --hvm \
                 --vnc \
                 --noautoconsole \
