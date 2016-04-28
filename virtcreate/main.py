@@ -58,5 +58,9 @@ class VirtCreate:
             print("Cmd:  {0}".format(cmd))
         os.system(cmd)
 
-if __name__ == "__main__":
+
+def entry_point():
     VirtCreate().main()
+
+if __name__ == "__main__":
+    entry_point()
