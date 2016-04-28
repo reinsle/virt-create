@@ -2,3 +2,4 @@ debian/files
 debian/virt-create.debhelper.log
 debian/virt-create.substvars
 debian/virt-create/
+.idea
